@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="aa"></div>
+
+<script language="javascript">
+    var fso, ts, s ;
+    var ForReading = 1;
+
+    fso = new ActiveXObject("Scripting.FileSystemObject");
+    ts = fso.OpenTextFile("d:\\testfile.txt", ForReading);
+    s = ts.ReadLine();
+    document.getElementById("aa").innerHTML=s;
+</script>
+
+</body>
+</html>
